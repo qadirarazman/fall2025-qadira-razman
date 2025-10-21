@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- this allows for the website to be responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- browser tab name -->
+  <title>What's on Your Plate?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header (includes navigation) -->
+    <header>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#diary">Your Diary</a>
+      </nav>
+    </header>
+
+    <!-- Main content of the webpage -->
+     <main>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+      <h2>What's on your plate?</h2>
+      <p>Find your next meal.</p>
+    </section>
+
+      <!-- RECIPE RESULTS SECTION -->
+    <section id="recipes">
+          <!-- div allows us to group the heading as a box to style -->
+  <div class="Results header title">
+  <h1>decolonize your mind, one dish at a time.</h1>
+  <h2>here are your results.</h2>
+  <h2>let’s cook.</h2>
+      </div>
+
+    
+    <!-- Recipe cards container, for ease when doing css layout -->
+    <div class="recipe-grid">
+      
+    <!-- Recipe Card 1 -->
+    <!-- article is used for a self-contained piece of content that could stand on its own -->
+    <!-- labelling the class will help me style all recipe cards later on in CSS -->
+    <article class="recipe-card">
+      <h2>Asam Laksa</h2>
+      
+       <!-- figure indicates grouping media and their explanations together -->
+      <figure>
+        <img src="https://via.placeholder.com/200" alt="Bowl of Asam Laksa">
+      </figure>
+      <p>
+        Asam Laksa’s tangy, tamarind-based broth is more than just a burst of flavor — it’s a relic of Malaysia’s colonial past.
+      </p>
+      
+      <!-- Recipe buttons-->
+    <nav>
+       <!-- unordered list aka container that holds list items -->
+      <ul>
+        <li><button>Recipe</button></li>
+         <li><button>Video Tutorials</button></li>
+         <li><button>Learn More</button></li>
+         <li><button>Add to Recipe Diary</button></li>
+      </ul>
+          </nav>
+        </article>
+      
+      <!-- Recipe Card 2 -->
+      <article class="recipe-card"> 
+        <h2>Nasi Lemak</h2>
+        <figure>
+        <img src="https://via.placeholder.com/200" alt="Plate of Nasi Lemak">
+        </figure>
+        <p>
+           Nasi Lemak, now Malaysia’s beloved national dish, was first concocted by paddy farmers seeking sustenance before the long workday.
+      </p>
+        <nav> 
+          <ul>
+            <li><button>Recipe</button></li>
+            <li><button>Video Tutorials</button></li>
+            <li><button>Learn More</button></li>
+            <li><button>Add to Recipe Diary</button></li>
+          </ul>
+        </nav>
+      </article>
+        
+       <!-- Recipe Card 3 -->
+      <article class="recipe-card">
+        <h2> Roti Canai with Dahl</h2>
+        <figure>
+          <img src="https://via.placeholder.com/200" alt="Plate of Roti Canai with bowl of Dahl">
+        </figure>
+        <p>
+           Roti Canai’s flaky layers tell stories of migration, trade, and colonial entanglement.
+        </p>
+        <nav>
+          <ul>
+            <li><button>Recipe</button></li>
+            <li><button>Video Tutorials</button></li>
+            <li><button>Learn More</button></li>
+            <li><button>Add to Recipe Diary</button></li>
+          </ul>
+        </nav>
+      </article>
+      
+            </div>
+          </section>
+    
+           <!-- RECIPE DIARY SECTION -->
+    <section id="diary">
+      <h1>Your Diary</h1>
+      <p>Your saved recipes will appear here.</p>
+    </section>
+
+  </main>
+  </body>
+</html>
