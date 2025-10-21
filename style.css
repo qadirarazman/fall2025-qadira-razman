@@ -1,14 +1,16 @@
-/* Hide all sections by default */
+/* Base: hide all sections by default. A small script in index.html
+   will show exactly one section (the active hash) so sections
+   don't stack under each other when navigating. */
 section {
   display: none;
 }
 
-/* Show the section that matches the #target in the URL */
+/* If JS is disabled, allow the :target selector as an accessible fallback */
 section:target {
   display: block;
 }
 
-/* Show the first section (home) by default */
-section:first-of-type {
-  display: block;
+/* Optional: simple default styling so content isn't cramped */
+main {
+  padding: 1rem;
 }

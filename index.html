@@ -114,5 +114,30 @@
     </section>
 
   </main>
+  <script>
+    // Simple hash router: show only the section that matches the URL hash.
+    (function () {
+      function showSection(id) {
+        // hide all sections
+        document.querySelectorAll('main section').forEach(function (sec) {
+          sec.style.display = 'none';
+        });
+
+        // default to #home when no hash provided
+        if (!id) id = '#home';
+
+        var target = document.querySelector(id);
+        if (target) target.style.display = 'block';
+      }
+
+      // show on initial load
+      showSection(location.hash);
+
+      // respond to hash changes
+      window.addEventListener('hashchange', function () {
+        showSection(location.hash);
+      });
+    })();
+  </script>
   </body>
 </html>
