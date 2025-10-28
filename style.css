@@ -14,3 +14,24 @@ section:target {
 main {
   padding: 1rem;
 }
+
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.item img {
+  width: 100%;           /* make the image span the full width of card */
+  height: 700px;         /* fixed height so all are uniform */
+  object-fit: cover;     /* crop rather than distort */
+  border-radius: 6px;    /* optional: matches your card corners */
+}
