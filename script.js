@@ -46,16 +46,6 @@ recipes.forEach(recipe => {
   const nav = document.createElement('nav');
   const ul = document.createElement('ul');
 
- 
-  // Set recipe content 
-title.textContent = recipe.name;
-desc.textContent = recipe.description;
-img.src = recipe.imagePath;
-
-// Append to structure
- figure.appendChild(img);
-
- // Loop through button data and create elements
   buttons.forEach(label => {
     const li = document.createElement('li');
     const btn = document.createElement('button');
