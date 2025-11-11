@@ -31,3 +31,15 @@ The data I have decided to display are the various recipe cards users will be ab
 
 ### Challenges and Next Steps 
 I asked ChatGPT to help me with the array and loop section for my buttons. I wanted each recipe card to have its own image, description, and then navigation system. I understood how to create the button data array and then loop through that data however, I was a little confused with the final append section here as it wasn't quite clear to me how exactly it works, I hope to clarify these issues during office hours. 
+
+## What's On Your Plate? — Animations with CSS
+
+### What I did 
+- Made some layout changes; added a search bar to the home page (doesn't work yet) and changed the flexbox layout of the recipe page. 
+- Added a grow and change color animation on the front page when users hover over the title.
+- Added a movement and color change animation to each recipe card when hovered over.
+- I made the 'Add to diary' button work! So users can now save recipes and view them in their diary page.
+
+### Challenges and Next Steps 
+- I wanted to add a cool flip box animation I found online but found it was difficult to implement with my current looping in JS. This is something I would like to spend a little more time trying to do. Ideally I want the front of each recipe card to look as is but have the recipe on the backside for users to see when they click on the card.
+- I am also unsure how much work it will be to allow users to search up recipes by name or ingredient so I might have to think about how else I want my website to flow.

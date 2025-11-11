@@ -23,16 +23,33 @@
 
     <!-- HOME SECTION -->
     <section id="home">
-      <h2>What's on your plate?</h2>
+      <h1 class="plate-title">
+  <span>w</span><span>h</span><span>a</span><span>t</span><span>'</span><span>s</span>
+  <span> </span>
+  <span>o</span><span>n</span>
+  <span> </span>
+  <span>y</span><span>o</span><span>u</span><span>r</span>
+  <span> </span>
+  <span>p</span><span>l</span><span>a</span><span>t</span><span>e</span><span>?</span>
+</h1>
       <p>Find your next meal.</p>
-    </section>
+
+     <form id="search-form">
+    <input 
+      type="text" 
+      id="search-input" 
+      placeholder="Search for a recipe..."
+      aria-label="Search for a recipe"
+    >
+    <button type="submit">Search</button>
+  </form>
+</section>
 
       <!-- RECIPE RESULTS SECTION -->
    <section id="recipes">
-  <div class="Results header title">
+  <div class="results-header-title">
     <h1>decolonize your mind, one dish at a time.</h1>
-    <h2>here are your results.</h2>
-    <h2>let’s cook.</h2>
+    <h2>here are your results; let’s cook.</h2>
   </div>
 
   <div id="recipe-container">
@@ -44,6 +61,7 @@
     <section id="diary">
       <h1>Your Diary</h1>
       <p>Your saved recipes will appear here.</p>
+      <div id="diary-container"></div>
     </section>
 
   </main>

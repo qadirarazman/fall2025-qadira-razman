@@ -46,11 +46,27 @@ recipes.forEach(recipe => {
   const nav = document.createElement('nav');
   const ul = document.createElement('ul');
 
+ 
+  // Set recipe content 
+title.textContent = recipe.name;
+desc.textContent = recipe.description;
+img.src = recipe.imagePath;
+
+// Append to structure
+ figure.appendChild(img);
+
+ // Loop through button data and create elements
   buttons.forEach(label => {
     const li = document.createElement('li');
     const btn = document.createElement('button');
     btn.textContent = label; // adds visible text to button
 
+    // If the user clicks "Add to Recipe Diary"
+  if (label === "Add to Recipe Diary") {
+    btn.addEventListener('click', () => {
+      addToDiary(recipe);
+    });
+  }
     // Append buttons to structure
     li.appendChild(btn);  // put button inside li
     ul.appendChild(li);   // put each li into ul
@@ -66,4 +82,32 @@ recipes.forEach(recipe => {
 
    container.appendChild(card); // add card to page
 });
+
+function addToDiary(recipe) {
+  const diaryContainer = document.getElementById('diary-container');
+
+  // Create a smaller version of the recipe card
+  const diaryCard = document.createElement('article');
+  diaryCard.classList.add('diary-card');
+
+  const title = document.createElement('h3');
+  title.textContent = recipe.name;
+
+  const img = document.createElement('img');
+  img.src = recipe.imagePath;
+  img.alt = recipe.name;
+
+  // let users remove items later
+  const removeBtn = document.createElement('button');
+  removeBtn.textContent = "Remove";
+  removeBtn.addEventListener('click', () => diaryContainer.removeChild(diaryCard));
+
+  diaryCard.appendChild(title);
+  diaryCard.appendChild(img);
+  diaryCard.appendChild(removeBtn);
+
+  diaryContainer.appendChild(diaryCard);
+  location.hash = '#diary';
+
+}
 
