@@ -47,3 +47,7 @@ I asked ChatGPT to help me with the array and loop section for my buttons. I wan
 ## What's On Your Plate? — 11/19 Changes
 - This week I wanted to create an animation where my recipe cards would flip and show the full recipe when users click on each card. 
 - I managed to get that function to work but the card layout is now overlapping. 
+
+## What's On Your Plate? — Final Changes
+- This week I was finalizing my web page for the final presentation!
+- I made adjustments to the recipe card page to ensure they all fit well and I also changed the home page from a search bar to a direct button to the recipe page for folks to see.

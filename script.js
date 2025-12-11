@@ -19,12 +19,7 @@ const recipes = [
         imagePath: "images/asamlaksa.png",
         fullRecipe: "images/recipes/asamlaksa-full.png"
     },
-     {
-        name: "Satay",
-        description: "Though now seen as quintessentially Malay, satay originated from Javanese street vendors in colonial-era port cities who adapted Middle Eastern kebabs to local ingredients. Under Dutch and later British influence, the dish spread across Southeast Asia through trade and labor routes. Its skewered simplicity — grilled meat over charcoal — reflects both resourcefulness and cultural exchange across the Malay Archipelago.",
-        imagePath: "images/satay.png",
-        fullRecipe: "images/recipes/satay-full.png"
-    },
+   
      {
         name: "Hainanese Chicken Rice",
         description: "A dish born from migration and adaptation: Hainanese immigrants brought their Wenchang chicken rice to British Malaya in the late 19th century. Many worked as cooks for colonial officers, adapting the recipe to local palates with chili sauce and cucumber. The result was a subtle blend of Chinese technique, colonial kitchens, and Malayan ingredients — comfort food with a layered colonial past.",
@@ -81,7 +76,7 @@ img.src = recipe.imagePath;
 
     // If the user clicks "Add to Recipe Diary"
   if (label === "Add to Recipe Diary") {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
       e.stopPropagation(); // prevent flipping when clicking button
       addToDiary(recipe);
     });
@@ -94,7 +89,7 @@ img.src = recipe.imagePath;
     nav.appendChild(ul); // add the ul (grouped list of buttons) into nav
 
     // Assemble recipe card 
-     card.appendChild(title);   // add recipe name
+  card.appendChild(title);   // add recipe name
   card.appendChild(figure);  // add image
   card.appendChild(desc);    // add description
   card.appendChild(nav);     // add the button nav section
@@ -155,6 +150,10 @@ function addToDiary(recipe) {
   location.hash = '#diary';
 
 }
+
+document.getElementById("see-recipes-btn").addEventListener("click", () => {
+  location.hash = "#recipes";
+});
 
 
 
